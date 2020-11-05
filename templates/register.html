@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="register" method="POST">
+        Enter first name: <input type="text" name="first_name" id="FirstName"><br>
+        Enter last name: <input type="text" name="last_name" id="LastName"><br>
+        Enter username: <input type="text" name="username" id="Username"><br>
+        Enter email: <input type="email" name="email" id="Email"><br>
+        Enter password1: <input type="password" name="password1" id="Password"><br>
+        Enter password2: <input type="password" name="password2" id="Confirm Password"><br>
+        <input type="submit">
+    </form>
+
+    <div>
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

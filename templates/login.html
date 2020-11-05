@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="login" method="POST">
+        Enter username: <input type="text" name="username" id="Username"><br>
+        Enter password: <input type="password" name="password1" id="Password"><br>
+        <input type="submit">
+    </form>
+
+    <div>
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
